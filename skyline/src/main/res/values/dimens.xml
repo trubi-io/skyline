@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="prom_default_axis_label_text_size">10sp</dimen>
+    <dimen name="prom_default_border_width">0.5dp</dimen>
+    <dimen name="prom_default_candle_width">5dp</dimen>
+    <dimen name="prom_default_candle_gap">1dp</dimen>
+    <dimen name="prom_default_shadow_line_width">1dp</dimen>
+    <dimen name="prom_default_common_gap">2dp</dimen>
+    <dimen name="prom_default_time_line_width">0.5dp</dimen>
+    <dimen name="prom_1dp">1dp</dimen>
+    <dimen name="prom_2dp">2dp</dimen>
+    <dimen name="prom_3dp">3dp</dimen>
+    <dimen name="prom_8dp">8dp</dimen>
+    <dimen name="prom_12dp">12dp</dimen>
+    <dimen name="prom_text_size_12">12sp</dimen>
+</resources>

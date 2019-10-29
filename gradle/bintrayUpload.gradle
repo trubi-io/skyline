@@ -1,0 +1,51 @@
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+group = 'io.trubi.android'
+version = version_name
+
+def getPropertyFromLocalProperties(key) {
+    File file = project.rootProject.file('local.properties')
+    if (file.exists()) {
+        Properties properties = new Properties()
+        properties.load(file.newDataInputStream())
+        return properties.getProperty(key)
+    }
+}
+
+def gitUrl = 'https://github.com/trubi-io/skyline'
+
+bintray {
+    user = getPropertyFromLocalProperties("bintray.user")
+    key = getPropertyFromLocalProperties("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        repo = 'maven'
+        name = "${project.group}:skyline"
+        userOrg = 'trubi'
+        licenses = ['MIT']
+        vcsUrl = gitUrl
+        publish = true
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId groupId
+                artifactId 'skyline'
+                version version_name
+            }
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+artifacts {
+    archives sourcesJar
+}
