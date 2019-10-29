@@ -4,7 +4,10 @@ Skyline is a kline library for android client, provide professional market chart
 # Why named Skyline
 Skyline hope each candle can rise to sky high!
 
-# How to use
+# Preview
+![skyline](/images/skyline-example.gif)
+
+# Installation
 In gradle
 ```
 repositories {
@@ -13,9 +16,6 @@ repositories {
 
 implementation 'io.trubi.android:skyline:1.0.0'
 ```
-
-# Preview
-![skyline](/images/skyline.gif)
 
 # Structure
 ```
