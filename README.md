@@ -49,7 +49,8 @@ In xml
     android:layout_width="match_parent"
     android:layout_height="300dp" />
 ```
-In kotlin
+
+## Display candles 
 ```
 val candles = ... // prepare candle data
 skyline.setCandles(candles)
