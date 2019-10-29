@@ -1,9 +1,18 @@
 # Skyline
 Skyline is a kline library for android client, provide professional market charts. Skyline only draw the candles displayed on current screen. So its render speed will be faster than all drawing. Skyline has rich support of technical indicators. You can customize indicators on main graph area and sub graph area as you want. Skyline already have build-in indicator algorithm implementations. And if you want to support any other indicators, only need to wrapper your own calculate data with ```IndicatorWrapper``` or create your own ```SubGraphDrawer```, then place into skyline, skyline will automatically adjust the view based on the incoming data. Skyline also support multi-gestures include drag, scale(x direction and y direction).
 
-
 # Why named Skyline
 Skyline hope each candle can rise to sky high!
+
+# How to use
+In gradle
+```
+repositories {
+    mavenCentral()
+}
+
+implementation 'io.trubi.android:skyline:1.0.0'
+```
 
 # Preview
 ![skyline](/images/skyline.gif)
