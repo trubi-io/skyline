@@ -19,9 +19,9 @@ bintray {
     key = getPropertyFromLocalProperties("bintray.apikey")
     configurations = ['archives']
     pkg {
-        repo = 'maven'
-        name = "${project.group}:skyline"
-        userOrg = 'trubi'
+        repo = 'Skyline'
+        name = "skyline"
+        userOrg = 'fitzlu'
         licenses = ['MIT']
         vcsUrl = gitUrl
         publish = true
