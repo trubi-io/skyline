@@ -8,12 +8,7 @@ Skyline hope each candle can rise to sky high!
 ![skyline](/images/skyline-example.gif)
 
 # Installation
-In gradle
 ```
-repositories {
-    mavenCentral()
-}
-
 implementation 'io.trubi.android:skyline:1.0.0'
 ```
 
